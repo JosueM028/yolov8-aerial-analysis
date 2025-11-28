@@ -3,24 +3,24 @@
 
 Este repositorio contiene el código y análisis para la preparación, análisis y entrenamiento de un modelo de detección de objetos utilizando el formato YOLO.
 
-## 📋 Descripción del Proyecto
+##  Descripción del Proyecto
 El objetivo es procesar un dataset de imágenes aéreas de vehículos para entrenar un modelo de detección (YOLOv8/YOLOv3). El proyecto abarca:
 1. Análisis exploratorio de los datos (EDA).
 2. Interpretación y corrección de etiquetas (Bounding Boxes).
 3. División del dataset (Train/Test).
 4. Configuración para entrenamiento.
 
-## 📂 Dataset
+##  Dataset
 El dataset utilizado proviene de:
 - [Aerial Cars Dataset (GitHub)](https://github.com/jekhor/aerial-cars-dataset)
 
-## ⚙️ Requisitos
+##  Requisitos
 - Python 3.8+
 - OpenCV
 - Matplotlib
 - Ultralytics (YOLO)
 
-## 🚀 Estructura del Proyecto
+##  Estructura del Proyecto
 ├── data/                  # Dataset crudo (ignorado por git)
 ├── src/                   # Scripts de procesamiento
 │   ├── analisis_datos.py  # Script de conteo y visualización
@@ -28,3 +28,7 @@ El dataset utilizado proviene de:
 ├── notebooks/             # Jupyter Notebooks de entrenamiento
 ├── README.md              # Documentación
 └── requirements.txt       # Dependencias
+##  Interpretación del formato YOLO (.txt)
+Según el análisis realizado en este proyecto, cada línea de los archivos .txt representa un objeto detectado con el formato:
+`<clase_id> <centro_x> <centro_y> <ancho> <alto>`
+Donde los valores de posición y tamaño están normalizados (entre 0 y 1) respecto al tamaño total de la imagen.
