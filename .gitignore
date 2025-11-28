@@ -1,0 +1,10 @@
+# Ignorar dataset de imagenes
+data/
+dataset_final_yolo/
+aerial-cars-dataset/
+__pycache__/
+*.ipynb_checkpoints
+*.pt
+*.onnx
+.env*.zip
+*.tar.gz
